@@ -14,6 +14,30 @@
   }
 }
 
+@media only screen and (max-width: 800px) {
+  /* For tablets: */
+  .section-hero,
+  .section-myeducare,
+  .section0,
+  .section1,
+  #wrapper,
+  .right {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  .section-hero,
+  .section-myeducare,
+  .section0,
+  .section1,
+  #wrapper,
+  .right {
+    width: 100%;
+  }
+}
+
 @keyframes animatedBackground {
   from {
     background-position: 0px 0;
