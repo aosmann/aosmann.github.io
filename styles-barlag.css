@@ -1,0 +1,10 @@
+body {
+  margin: 25px;
+}
+.col {
+  text-align: center;
+  background-color: #1683ff;
+  padding: 10px;
+  border: 1px solid white;
+  margin: auto;
+}
