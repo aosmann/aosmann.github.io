@@ -127,6 +127,8 @@ button:hover {
   background-color: #f6f6f6;
   margin: 0px 0px;
   padding: 0px 0px;
+  overflow: hidden;
+  list-style: none;
 }
 
 #wrapper {
@@ -134,6 +136,8 @@ button:hover {
   background-color: transparent;
   width: 1368px;
   margin: auto;
+  overflow: hidden;
+  list-style: none;
 }
 
 .text-group1 {
