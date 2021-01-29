@@ -23,6 +23,12 @@
   }
 }
 
+@supports (scroll-snap-type) {
+  .slider > a {
+    display: none;
+  }
+}
+
 @keyframes animatedBackground {
   from {
     background-position: 0px 0;
@@ -122,6 +128,7 @@ button:hover {
 
 .section-hero {
   height: 900px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   background-color: #f6f6f6;
@@ -187,7 +194,7 @@ button:hover {
 
 .hero-image {
   margin: 0px;
-  width: 700px;
+  width: 55%;
   height: 100%;
   order: 1;
   background-color: transparent;
@@ -829,4 +836,21 @@ hr {
 .copyright {
   padding-bottom: 10px;
   width: 1368px;
+}
+
+.slides {
+  scroll-behavior: smooth;
+}
+
+.slider {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  overflow-x: auto;
+}
+.slide {
+  width: 300px;
+  flex-shrink: 0;
+  height: 100%;
+  background-color: #818181;
 }
