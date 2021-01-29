@@ -23,12 +23,6 @@
   }
 }
 
-@supports (scroll-snap-type) {
-  .slider > a {
-    display: none;
-  }
-}
-
 @keyframes animatedBackground {
   from {
     background-position: 0px 0;
@@ -51,7 +45,7 @@ button {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: #0077ff;
+  color: rgb(134, 134, 134);
   text-decoration: none;
   outline: none;
 }
