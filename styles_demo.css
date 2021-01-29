@@ -190,3 +190,10 @@ textarea:focus {
   border: 2px solid #0077ff;
   background-color: transparent;
 }
+
+.fb9 {
+  border: 1px solid #3366ff;
+  background-color: #b3c6ff;
+  width: 150px;
+  height: 30px;
+}
