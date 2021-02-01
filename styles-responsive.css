@@ -1,0 +1,308 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
+@font-face {
+  font-family: "San Francisco";
+  font-weight: 400;
+  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0px 0;
+  }
+  to {
+    background-position: -1572px 0;
+  }
+}
+
+@media only screen and (max-width: 725px) {
+  .hero-text-group,
+  .about-us-text {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 940px) {
+  .download-button {
+    height: 50px;
+    padding: 5px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: auto;
+  padding: 0;
+  background-color: transparent;
+}
+
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: -apple-system, "San Francisco", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 50px;
+  background-color: rgb(158, 158, 158);
+}
+
+li,
+a,
+button {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  color: rgb(126, 126, 126);
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  margin: auto;
+  margin-top: 0;
+  overflow: auto;
+}
+
+header {
+  z-index: 1;
+  width: 100%;
+  max-height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffffe1;
+  padding: 20px 0;
+  border-bottom: 2px solid #ffffff;
+  backdrop-filter: blur(15px);
+  overflow: hidden;
+  position: fixed;
+}
+
+.logo {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.nav-links {
+  background-color: transparent;
+  list-style: none;
+}
+
+.nav-links li {
+  background-color: transparent;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.nav-links li a {
+  background-color: transparent;
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: #0077ff;
+  font-weight: 500;
+}
+
+.material-icons {
+  background-color: transparent;
+  padding-right: 10px;
+  vertical-align: middle;
+}
+
+.button-no-border {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0077ff;
+  color: white;
+  border: 2px solid #0077ff;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-no-border:hover {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #005ac2;
+  color: white;
+  border: 2px solid #005ac2;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 1300px;
+  height: auto;
+}
+
+/* Section Hero Starts Here */
+
+.section-hero {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.hero-left-panel {
+  text-align: end;
+  min-width: 100px;
+  display: flex;
+}
+
+.hero-right-panel {
+  margin: 0px;
+  display: flex;
+}
+
+.hero-image {
+  width: 100%;
+  max-width: 630px;
+}
+
+.hero-text-group {
+  text-align: left;
+  font-size: 23px;
+}
+
+.hero-headline {
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  max-width: 450px;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.hero-text {
+  text-align: left;
+  font-weight: 400;
+  max-width: 450px;
+  margin: 0px;
+}
+
+.download-button {
+  max-height: 60px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+/* Section About Us Starts Here */
+
+.section-about-us {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #0077ff;
+}
+
+.about-us-text {
+  max-width: 900px;
+  font-size: 23px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+}
+
+/* Section Web Starts Here */
+
+.section-web {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  padding-bottom: 0px;
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.section-web-text {
+  max-width: 900px;
+  font-size: 23px;
+  font-weight: 500;
+  color: #212529;
+  text-align: center;
+}
+
+.web-image {
+  display: flex;
+  align-items: center;
+  margin: auto;
+  padding: 0px;
+}
+
+/* Section Teacher Starts Here */
+
+.section-teacher {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.teacher-left-panel {
+  text-align: end;
+
+  min-width: 300px;
+  display: flex;
+}
+
+.teacher-right-panel {
+  margin: 0px;
+  display: flex;
+}
+
+.teacher-image {
+  width: 100%;
+}
+
+.teacher-text-group {
+  text-align: left;
+}
+
+.teacher-headline {
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  max-width: 450px;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.teacher-text {
+  text-align: left;
+  font-family: -apple-system, "San Francisco", sans-serif;
+  font-weight: 400;
+  font-size: 23px;
+  max-width: 450px;
+  margin: 0px;
+}

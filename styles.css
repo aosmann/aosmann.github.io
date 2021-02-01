@@ -12,6 +12,13 @@
     scroll-padding-top: 85px;
     width: fit-content;
   }
+
+  .slider,
+  .slide-wrap,
+  .slide {
+    scroll-behavior: smooth;
+    scroll-padding-top: 0px;
+  }
 }
 
 @keyframes animatedBackground {
@@ -824,14 +831,52 @@ hr {
 }
 
 .slider {
-  width: 300px;
-  height: 300px;
+  width: 1385px;
+  padding: 20px 20px;
   display: flex;
-  overflow-x: auto;
+  overflow-x: scroll;
+  box-sizing: content-box;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 70%,
+    rgba(241, 241, 241, 0.404) 100%
+  );
 }
+
 .slide {
-  width: 300px;
+  width: 350px;
+  margin: 0px 40px;
   flex-shrink: 0;
-  height: 100%;
-  background-color: #818181;
+  height: 500px;
+  background-color: #f7f7f7;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  align-items: center;
+  padding: 2rem 1.5rem;
+}
+
+.slide-wrap {
+  width: 1385px;
+  align-items: center;
+}
+
+.text-features {
+  font-family: -apple-system, "San Francisco", sans-serif;
+  font-size: 20px;
+}
+
+.header-features {
+  font-family: "Ubuntu", sans-serif;
+  margin-bottom: 1rem;
+}
+
+.icon-features {
+  width: 7rem;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  margin-left: 0rem;
+  color: #0077ff;
+  background-color: #eeeeee;
+  border-radius: 1rem;
 }
