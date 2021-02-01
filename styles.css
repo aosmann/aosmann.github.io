@@ -823,10 +823,6 @@ hr {
   width: 1368px;
 }
 
-.slides {
-  scroll-behavior: smooth;
-}
-
 .slider {
   width: 300px;
   height: 300px;
