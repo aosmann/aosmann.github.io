@@ -17,15 +17,23 @@
 
 @media only screen and (max-width: 725px) {
   .hero-text-group,
-  .about-us-text {
+  .about-us-text,
+  .parent-text-group,
+  .teacher-text-group,
+  .student-text-group {
     padding-right: 10px;
     padding-left: 10px;
   }
   .section-hero,
   .section-about-us,
+  .section-web,
   .section-teacher,
-  .section-web {
+  .section-student,
+  .section-parent {
     padding: 0px;
+  }
+  .app-icons {
+    margin-top: 40px;
   }
 }
 
@@ -73,7 +81,7 @@ p {
 }
 
 li,
-a,
+.a,
 button {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
@@ -109,23 +117,24 @@ header {
   cursor: pointer;
 }
 
-.nav-links {
+.topnav {
+  overflow: hidden;
   background-color: transparent;
   list-style: none;
 }
 
-.nav-links li {
+.topnav li {
   background-color: transparent;
   display: inline-block;
   padding: 0px 15px;
 }
 
-.nav-links li a {
+.topnav li .a {
   background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
-.nav-links li a:hover {
+.topnav li .a:hover {
   color: #0077ff;
   font-weight: 500;
 }
@@ -169,6 +178,22 @@ header {
 .wrapper {
   max-width: 1300px;
   height: auto;
+  padding: 0px 10px;
+}
+
+.app-icons {
+  max-width: 15%;
+  min-width: 80px;
+  border: 1px solid rgb(238, 238, 238);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  filter: drop-shadow(0px 0px 10px #bebebe57);
+}
+
+.material-icons {
+  background-color: transparent;
+  padding-right: 10px;
+  vertical-align: middle;
 }
 
 /* Section Hero Starts Here */
@@ -283,8 +308,7 @@ header {
 
 .teacher-left-panel {
   text-align: end;
-
-  min-width: 300px;
+  min-width: 100px;
   display: flex;
 }
 
@@ -295,17 +319,18 @@ header {
 
 .teacher-image {
   width: 100%;
+  max-width: 630px;
 }
 
 .teacher-text-group {
   text-align: left;
+  font-size: 23px;
 }
 
 .teacher-headline {
   text-align: left;
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 55px;
   max-width: 450px;
   color: black;
   margin: 0px;
@@ -314,9 +339,164 @@ header {
 
 .teacher-text {
   text-align: left;
-  font-family: -apple-system, "San Francisco", sans-serif;
   font-weight: 400;
-  font-size: 23px;
-  max-width: 450px;
+  max-width: 500px;
   margin: 0px;
+}
+
+/* Section Student Starts Here */
+
+.section-student {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #f6f6f6;
+}
+
+.student-left-panel {
+  text-align: end;
+  min-width: 100px;
+  display: flex;
+  order: 2;
+}
+
+.student-right-panel {
+  margin: 0px;
+  display: flex;
+  order: 1;
+}
+
+.student-image {
+  width: 100%;
+  max-width: 630px;
+}
+
+.student-text-group {
+  text-align: left;
+  font-size: 23px;
+}
+
+.student-headline {
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  max-width: 450px;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.student-text {
+  text-align: left;
+  font-weight: 400;
+  max-width: 500px;
+  margin: 0px;
+}
+
+/* Section Parent Starts Here */
+
+.section-parent {
+  width: 100%;
+  height: auto;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.parent-left-panel {
+  text-align: end;
+  min-width: 100px;
+  display: flex;
+}
+
+.parent-right-panel {
+  margin: 0px;
+  display: flex;
+}
+
+.parent-image {
+  width: 100%;
+  max-width: 630px;
+}
+
+.parent-text-group {
+  text-align: left;
+  font-size: 23px;
+}
+
+.parent-headline {
+  text-align: left;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  max-width: 450px;
+  color: black;
+  margin: 0px;
+  padding-bottom: 10px;
+}
+
+.parent-text {
+  text-align: left;
+  font-weight: 400;
+  max-width: 500px;
+  margin: 0px;
+}
+
+/* Section Features Starts Here */
+
+.section-features {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  padding: 150px 0px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.features-box {
+  height: auto;
+  padding: 40px;
+  margin: 15px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  transition: 0.3s;
+  border: 2px solid #f6f6f6;
+}
+
+.features-box:hover {
+  background-color: #f6f6f6;
+}
+
+.text-features {
+  padding: 0px 20px;
+}
+
+/* Section Customers Starts Here */
+
+.section-customers {
+  padding: 50px;
+}
+
+.customers-slide {
+  height: 200px;
+  width: 1368px;
+  background-color: transparent;
+  background-image: url("images/image-loop.png");
+  background-repeat: repeat-x;
+  animation: animatedBackground 30s linear infinite;
+  line-height: 200px;
+  transition-duration: 0.4s;
+}
+
+/* Section Info Starts Here */
+
+.section-info {
+  padding: 50px;
+  background-color: #0077ff;
+}
+
+.info-table {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
 }
