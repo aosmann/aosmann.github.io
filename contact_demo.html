@@ -4,24 +4,40 @@
    <meta charset="UTF-8">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>MyEducare</title>
+   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0,user-scalable=no shrink-to-fit=no">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="HandheldFriendly" content="true">
    <link rel="stylesheet" href="styles_demo.css">
    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
    <link rel="shortcut icon" href="images/favicon.ico" /> 
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+
+
    <script src='https://www.google.com/recaptcha/api.js'></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+
 </head>
 <body>
    <header>
-      <a href="index.html"><img src="images/myeducare-dark.png" alt="logo" class="logo"></a>
+      <a href="index-responsive.html#top"><img src="images/myeducare-dark.png" alt="logo" class="logo"></a>
       <nav>
-         <ul class="nav_links">
-            <li><a href="index.html#section-myeducare">About App</a></li>
-            <li><a href="index.html#teacher"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;" alt="E logo single">Teacher</a></li>
-            <li><a href="index.html#student"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;" alt="E logo single">Student</a></li>
-            <li><a href="index.html#parent"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;" alt="E logo single">Parent</a></li>
-            <li><a href="index.html#plans">Pricing</a></li>
-            <li><a href="index.html#footer">Contact</a></li>
-            <li><a href="contact_demo.html"><button class="button2" style="padding: 5px 10px; font-size: 16px; font-weight: 300;">Demo</button></a></li>
-
+         <ul class="topnav">
+             
+            <li><a class="a" href="index-responsive.html#about">About App</a></li>
+            <li><a class="a" href="index-responsive.html#teacher"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
+                     alt="E logo single">Teacher</a></li>
+            <li><a class="a" href="index-responsive.html#student"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
+                     alt="E logo single">Student</a></li>
+            <li><a class="a" href="index-responsive.html#parent"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
+                     alt="E logo single">Parent</a></li>
+            <li><a class="a" href="index-responsive.html#plans">Pricing</a></li>
+            <li><a class="a" href="index-responsive.html#contact">Contact</a></li>
+            <li><a class="a" href="contact_demo.html"><button class="button-no-border"
+                     style="padding: 3px 10px; font-size: 16px; font-weight: 300;">Demo</button></a></li>
+            
          </ul>
       </nav>
    </header>
@@ -29,22 +45,49 @@
 </body>
 </html>
 
-
-<form action="#0">
-   <div class="contact">
-      <div class="group-contact">
-         <h1>Request A Free Demo Account</h1><br><br>
-         <input class="text-box" type="text" placeholder="First Name" required><br>
-         <input class="text-box" type="text" placeholder="Last Name" required><br>
-         <input class="text-box" type="email" placeholder="Email" required><br>
-         <input class="text-box" type="text" placeholder="School Name" required><br>
-         <input class="text-box" type="number" placeholder="Number of Students" required><br>
-         <textarea name="description" cols="30" rows="10" placeholder="Description of Request" required></textarea><br>
-         <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-         <input class="button2" style="margin-top: 10px;" type="submit">
+<div class="section-form">
+   <div class="container">
+      <form action="#">
+         <div class="col-md wrapper" style="text-align: center;">
+            <h1 style="font-size: 28px;">REQUEST A DEMO ACCOUNT</h1><br>
+            <div class="row text-row">
+               <input class="text-box" type="text" placeholder="First Name" required><br>
+            </div>
          
-      
-      </div>
+   
+         
+            <div class="row text-row">
+               <input  class="text-box" type="text" placeholder="Last Name" required><br>
+            </div>
+         
+   
+         
+            <div class="row text-row">
+               <input class="text-box" type="email" placeholder="Email" required><br>
+            </div>
+         
+   
+         
+            <div class="row text-row">
+               <input class="text-box" type="text" placeholder="School Name" required><br>
+            </div>
+         
+   
+         
+            <div class="row text-row">
+               <input class="text-box" type="number" placeholder="Number of Students" required><br>
+            </div>
+         
+   
+        
+            <div class="row text-row">
+               <textarea name="description" cols="20" rows="10" placeholder="Description of Request" required></textarea><br>
+            </div>
+         
+   
+            <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
+            <div><input style="margin: auto;" class="button2" style="margin-top: 10px;" type="submit" required></div>
+         </div>   
+      </form>
    </div>
-</form>
-
+</div>

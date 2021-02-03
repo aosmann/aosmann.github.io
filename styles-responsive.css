@@ -35,6 +35,9 @@
   .app-icons {
     margin-top: 40px;
   }
+  .section-reviews {
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 725px) {
@@ -96,6 +99,8 @@ body {
   margin: auto;
   margin-top: 0;
   overflow: auto;
+  outline: none;
+  text-decoration: none;
 }
 
 header {
@@ -147,7 +152,7 @@ header {
 }
 
 .button-no-border {
-  padding: 16px 32px;
+  padding: 5px 10px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
@@ -364,6 +369,7 @@ header {
 
 .student-right-panel {
   margin: 0px;
+  margin-left: 15px;
   display: flex;
   order: 1;
 }
@@ -472,10 +478,39 @@ header {
   padding: 0px 20px;
 }
 
+/* Section Reviews Starts Here */
+
+.section-reviews {
+  padding: 100px;
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  height: 400px !important;
+}
+
+.carousel {
+  background: transparent;
+}
+
+.carousel-cell {
+  width: 100%;
+  height: auto !important;
+  padding: 50px 70px;
+  background: transparent;
+  border-radius: 40px;
+  counter-increment: carousel-cell;
+  filter: drop-shadow(0px 0px 30px #d3d3d35d);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+}
+
 /* Section Customers Starts Here */
 
 .section-customers {
-  padding: 100px;
+  padding-bottom: 100px;
 }
 
 .customers-slide {
@@ -502,35 +537,95 @@ header {
   color: #ffffff;
 }
 
-/* Section Reviews Starts Here */
-
-.section-reviews {
-  display: flex;
-}
-
-.carousel {
-  background: transparent;
-}
-
-.carousel-cell {
-  width: 100%;
-  padding: 50px 70px;
-  background: transparent;
-  border-radius: 40px;
-  counter-increment: carousel-cell;
-  filter: drop-shadow(0px 0px 40px #d3d3d39c);
-}
-
 /* Section Plans Starts Here */
 
 .section-plans {
-  background-color: aqua;
-  padding: 150px;
+  background-color: #ffffff;
+  padding: 150px 5px;
 }
 
 .plan-box {
-  background-color: #f6f6f6;
+  border-top: 10px solid #b6b6b6;
+  border-radius: 15px;
+  background: #ffffff;
   margin: 20px;
+  padding: 40px;
+  transition-duration: 0.4s;
+  filter: drop-shadow(0px 0px 50px #33333310);
+}
+
+.plan-box:hover {
+  border-top: 10px solid #b6b6b6;
+  margin-top: -10px;
+  filter: drop-shadow(0px 0px 50px #3333331f);
+}
+
+.plan-text {
+  padding: 0px 5px;
+}
+
+.plan-text-list {
+  font-size: 20px;
+}
+
+.button1 {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: transparent;
+  color: #0077ff;
+  border: 2px solid #0077ff;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button1:hover {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0077ff;
+  color: #ffffff;
+  border: 2px solid #0077ff;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button2 {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0077ff;
+  color: #ffffff;
+  border: 2px solid #0077ff;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.button2:hover {
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #005ac2;
+  color: #ffffff;
+  border: 2px solid #005ac2;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.3s;
+  cursor: pointer;
 }
 
 /* Section Footer Starts Here */

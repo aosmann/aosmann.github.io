@@ -23,19 +23,41 @@
 }
 
 * {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   margin: auto;
   padding: 0;
   background-color: transparent;
 }
 
+h1 {
+  font-family: "Ubuntu", sans-serif;
+}
+
+p {
+  font-family: -apple-system, "San Francisco", sans-serif;
+}
+
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 12px;
+  height: 12px;
+  border-radius: 50px;
+}
+
+::-webkit-scrollbar-thumb {
+  width: 10px;
+  border-radius: 50px;
+  background-color: rgb(158, 158, 158);
+}
+
 li,
-a,
+.a,
 button {
   font-family: "Ubuntu", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  color: rgb(134, 134, 134);
+  color: rgb(126, 126, 126);
   text-decoration: none;
   outline: none;
 }
@@ -43,18 +65,21 @@ button {
 body {
   margin: auto;
   margin-top: 0;
-  font-family: -apple-system, "San Francisco", sans-serif;
+  overflow: auto;
+  outline: none;
+  text-decoration: none;
 }
 
 header {
   z-index: 1;
   width: 100%;
+  max-height: 85px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #ffffffe1;
   padding: 20px 0;
-  border-bottom: 2px solid #f3f3f3;
+  border-bottom: 2px solid #ffffff;
   backdrop-filter: blur(15px);
   overflow: hidden;
   position: fixed;
@@ -65,23 +90,24 @@ header {
   cursor: pointer;
 }
 
-.nav_links {
+.topnav {
+  overflow: hidden;
   background-color: transparent;
   list-style: none;
 }
 
-.nav_links li {
+.topnav li {
   background-color: transparent;
   display: inline-block;
   padding: 0px 15px;
 }
 
-.nav_links li a {
+.topnav li .a {
   background-color: transparent;
   transition: all 0.3s ease 0s;
 }
 
-.nav_links li a:hover {
+.topnav li .a:hover {
   color: #0077ff;
   font-weight: 500;
 }
@@ -92,14 +118,52 @@ header {
   vertical-align: middle;
 }
 
-#wrapper {
-  align-items: center;
-  background-color: transparent;
-  width: 1368px;
-  margin: auto;
+.button-no-border {
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #0077ff;
+  color: white;
+  border: 2px solid #0077ff;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button-no-border:hover {
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #005ac2;
+  color: white;
+  border: 2px solid #005ac2;
+  font-size: 18px;
+  margin: 4px 2px;
+  border-radius: 80px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.wrapper {
+  max-width: 450px;
+  height: auto;
+  padding: 0px 10px;
+}
+
+/* Section Form Starts Here */
+
+.section-form {
+  display: flex;
+  padding: 150px 0px;
 }
 
 .button2 {
+  width: 100%;
+  max-width: 440px;
   outline: none;
   padding: 10px 20px;
   text-align: center;
@@ -110,7 +174,7 @@ header {
   border: 2px solid #0077ff;
   font-size: 18px;
   margin: auto;
-  border-radius: 50px;
+  border-radius: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
   align-items: center;
@@ -128,28 +192,27 @@ header {
   border: 2px solid #005ac2;
   font-size: 18px;
   margin: auto;
-  border-radius: 50px;
+  border-radius: 10px;
   transition-duration: 0.4s;
   cursor: pointer;
   font-family: "Ubuntu", sans-serif;
 }
 
-.contact {
-  height: auto;
-  align-items: center;
-  background-color: transparent;
+.text-row {
+  outline: none;
   margin: auto;
-  padding: 150px;
-  display: flex;
-  justify-content: center;
+  padding: 10px;
+  max-width: 440px;
+  font-size: 18px;
+  font-family: -apple-system, "San Francisco", sans-serif;
+  font-weight: 500;
 }
 
 .text-box {
   outline: none;
-  margin: 10px auto;
+  margin: auto;
   padding: 10px;
-  width: 400px;
-  height: 45px;
+  max-width: 440px;
   font-size: 18px;
   font-family: -apple-system, "San Francisco", sans-serif;
   font-weight: 500;
@@ -175,8 +238,6 @@ input[type="text"],
 textarea {
   margin: 10px auto;
   max-width: 400px;
-  min-width: 400px;
-  min-height: 100px;
   padding: 10px;
   font-size: 18px;
   font-weight: 500;
