@@ -21,6 +21,11 @@
 
 </head>
 <body>
+
+   
+
+
+
    <header>
       <a href="index.html#top"><img src="images/myeducare-dark.png" alt="logo" class="logo"></a>
       <nav>
@@ -42,63 +47,59 @@
       </nav>
    </header>
 
+   
+
+
+   <div class="section-form">
+      <div class="container">
+         <form action="mailto:aosmannur@gmail.com" method="POST" enctype=”multipart/form-data”>
+            <div class="col-md wrapper" style="text-align: center;">
+               <h1 style="font-size: 28px;">REQUEST A DEMO ACCOUNT</h1><br>
+               <div class="row text-row">
+                  <input class="text-box" type="text" placeholder="First Name" required><br>
+               </div>
+            
+      
+            
+               <div class="row text-row">
+                  <input  class="text-box" type="text" placeholder="Last Name" required><br>
+               </div>
+            
+      
+            
+               <div class="row text-row">
+                  <input class="text-box" type="email" placeholder="Email" required><br>
+               </div>
+            
+      
+            
+               <div class="row text-row">
+                  <input class="text-box" type="text" placeholder="School Name" required><br>
+               </div>
+            
+      
+            
+               <div class="row text-row">
+                  <input class="text-box" type="number" placeholder="Number of Students" required><br>
+               </div>
+            
+      
+           
+               <div class="row text-row">
+                  <textarea name="description" cols="20" rows="10" placeholder="Description of Request" required></textarea><br>
+               </div>
+            
+      
+               <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6LdQkEkaAAAAANYIBl5Eorz46MXNXHw9iAOdPBMP"></div>
+               <div><input style="margin: auto;" class="button2" style="margin-top: 10px;" type="submit" required></div>
+               
+            </div>   
+         </form>
+      </div>
+   </div>
+   
+
+
 </body>
 </html>
 
-<div class="section-form">
-   <div class="container">
-      <form action="#">
-         <div class="col-md wrapper" style="text-align: center;">
-            <h1 style="font-size: 28px;">REQUEST A DEMO ACCOUNT</h1><br>
-            <div class="row text-row">
-               <input class="text-box" type="text" placeholder="First Name" required><br>
-            </div>
-         
-   
-         
-            <div class="row text-row">
-               <input  class="text-box" type="text" placeholder="Last Name" required><br>
-            </div>
-         
-   
-         
-            <div class="row text-row">
-               <input class="text-box" type="email" placeholder="Email" required><br>
-            </div>
-         
-   
-         
-            <div class="row text-row">
-               <input class="text-box" type="text" placeholder="School Name" required><br>
-            </div>
-         
-   
-         
-            <div class="row text-row">
-               <input class="text-box" type="number" placeholder="Number of Students" required><br>
-            </div>
-         
-   
-        
-            <div class="row text-row">
-               <textarea name="description" cols="20" rows="10" placeholder="Description of Request" required></textarea><br>
-            </div>
-         
-   
-            <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6LdQkEkaAAAAANYIBl5Eorz46MXNXHw9iAOdPBMP"></div>
-            <div><input style="margin: auto;" class="button2" style="margin-top: 10px;" type="submit" required></div>
-            <button class="g-recaptcha" 
-        data-sitekey="6LdQkEkaAAAAANYIBl5Eorz46MXNXHw9iAOdPBMP" 
-        data-callback='onSubmit' 
-        data-action='submit'>Submit</button>
-         </div>   
-      </form>
-   </div>
-</div>
-
-
-<script>
-   function onSubmit(token) {
-     document.getElementById("demo-form").submit();
-   }
- </script>
