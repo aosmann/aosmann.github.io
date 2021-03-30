@@ -26,75 +26,76 @@
 
 
 
-   <header>
-      <a href="index.html#top"><img src="images/myeducare-dark.png" alt="logo" class="logo"></a>
-      <nav>
-         <ul class="topnav">
-             
-            <li><a class="a" href="index.html#about">About App</a></li>
-            <li><a class="a" href="index.html#teacher"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
-                     alt="E logo single">Teacher</a></li>
-            <li><a class="a" href="index.html#student"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
-                     alt="E logo single">Student</a></li>
-            <li><a class="a" href="index.html#parent"><img src="images/E-color.png" style="width: 13px; margin: 0px 5px;"
-                     alt="E logo single">Parent</a></li>
-            <li><a class="a" href="index.html#plans">Pricing</a></li>
-            <li><a class="a" href="index.html#contact">Contact</a></li>
-            <li><a class="a" href="contact_demo.html"><button class="button-no-border"
-                     style="padding: 3px 10px; font-size: 16px; font-weight: 300;">Demo</button></a></li>
-            
-         </ul>
-      </nav>
-   </header>
+   <nav class="navbar navbar-expand-lg navbar-light justify-content-between p-3 bg-white fixed-top">
+      <div class="container">
+         <a class="navbar-brand" href="./index.html"><img src="./images/myeducare-dark.png" style="max-width: 150px;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+         <div class="collapse navbar-collapse w-auto" id="navbarNavAltMarkup" style="flex-grow: 0;">
+            <div class="navbar-nav float-end">
+               <a class="nav-item nav-link m-auto" href="./index.html#about">About</a>
+               <a class="nav-item nav-link m-auto" href="./index.html#teacher"><img src="images/E-color.png" style="width: 13px; margin: 5px;" alt="E logo single">Teacher</a>
+               <a class="nav-item nav-link m-auto" href="./index.html#student"><img src="images/E-color.png" style="width: 13px; margin: 5px;" alt="E logo single">Student</a>
+               <a class="nav-item nav-link m-auto" href="./index.html#parent"><img src="images/E-color.png" style="width: 13px; margin: 0px5px;" alt="E logo single">Parent</a>
+               <a class="nav-item nav-link m-auto" href="./index.html#plans">Pricing</a>
+               <a class="nav-item nav-link m-auto" href="./index.html#contact">Contact</a>
+               <a class="nav-item nav-link m-auto" href="./contact_demo.html"><button class="btn-fill">Demo</button></a>
+            </div>
+      </div>
+      </div>    
+  </nav>
 
    
 
 
    <div class="section-form">
       <div class="container">
-         <form action="mailto:aosmannur@gmail.com" method="POST" enctype=”multipart/form-data”>
-            <div class="col-md wrapper" style="text-align: center;">
-               <h1 style="font-size: 28px;">REQUEST A DEMO ACCOUNT</h1><br>
-               <div class="row text-row">
-                  <input class="text-box" type="text" placeholder="First Name" required><br>
-               </div>
-            
-      
-            
-               <div class="row text-row">
-                  <input  class="text-box" type="text" placeholder="Last Name" required><br>
-               </div>
-            
-      
-            
-               <div class="row text-row">
-                  <input class="text-box" type="email" placeholder="Email" required><br>
-               </div>
-            
-      
-            
-               <div class="row text-row">
-                  <input class="text-box" type="text" placeholder="School Name" required><br>
-               </div>
-            
-      
-            
-               <div class="row text-row">
-                  <input class="text-box" type="number" placeholder="Number of Students" required><br>
-               </div>
-            
-      
-           
-               <div class="row text-row">
-                  <textarea name="description" cols="20" rows="10" placeholder="Description of Request" required></textarea><br>
-               </div>
-            
-      
-               <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6LdQkEkaAAAAANYIBl5Eorz46MXNXHw9iAOdPBMP"></div>
-               <div><input style="margin: auto;" class="button2" style="margin-top: 10px;" type="submit" required></div>
+         <div class="row m-auto">
+            <form class="w-auto m-auto" action="mailto:aosmannur@gmail.com" method="POST" enctype=”multipart/form-data”>
                
-            </div>   
-         </form>
+                  <h1 style="font-size: 28px;">REQUEST A DEMO ACCOUNT</h1><br>
+                  <div class="row text-row">
+                     <input class="text-box" type="text" placeholder="First Name" required><br>
+                  </div>
+               
+         
+               
+                  <div class="row text-row">
+                     <input  class="text-box" type="text" placeholder="Last Name" required><br>
+                  </div>
+               
+         
+               
+                  <div class="row text-row">
+                     <input class="text-box" type="email" placeholder="Email" required><br>
+                  </div>
+               
+         
+               
+                  <div class="row text-row">
+                     <input class="text-box" type="text" placeholder="School Name" required><br>
+                  </div>
+               
+         
+               
+                  <div class="row text-row">
+                     <input class="text-box" type="number" placeholder="Number of Students" required><br>
+                  </div>
+               
+         
+              
+                  <div class="row text-row">
+                     <textarea name="description" cols="20" rows="10" placeholder="Description of Request" required></textarea><br>
+                  </div>
+               
+         
+                  <div class="g-recaptcha" style="margin: 10px 0px;" data-sitekey="6LdQkEkaAAAAANYIBl5Eorz46MXNXHw9iAOdPBMP"></div>
+                  <div class="w-100"><input class="button2" type="submit" required></div>
+                  
+               
+            </form>
+         </div>
       </div>
    </div>
    

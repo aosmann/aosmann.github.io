@@ -1,164 +1,60 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
 
-@media screen and (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 85px;
-  }
-}
-
-@keyframes animatedBackground {
-  from {
-    background-position: 0px 0;
-  }
-  to {
-    background-position: -1572px 0;
-  }
-}
-
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: auto;
-  padding: 0;
-  background-color: transparent;
+html,
+body {
+  background-color: #202020;
+  padding-top: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 h1 {
+  height: fit-content;
+  width: fit-content;
+  font-weight: 700 !important;
   font-family: "Ubuntu", sans-serif;
 }
 
 p {
-  font-family: -apple-system, "San Francisco", sans-serif;
+  font-size: 22px;
+  height: fit-content;
 }
 
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  width: 10px;
-  border-radius: 50px;
-  background-color: rgb(158, 158, 158);
-}
-
-li,
-.a,
-button {
+.nav-item,
+.nav-link {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  font-weight: 700;
   font-size: 16px;
-  color: rgb(126, 126, 126);
-  text-decoration: none;
-  outline: none;
+  opacity: 70%;
+  transition: 0.3s ease;
 }
 
-body {
-  margin: auto;
-  margin-top: 0;
-  overflow: auto;
-  outline: none;
-  text-decoration: none;
+.nav-link:hover {
+  opacity: 1;
+  transition: 0.3s ease;
 }
 
-header {
-  z-index: 1;
-  width: 100%;
-  max-height: 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffffe1;
-  padding: 20px 0;
-  border-bottom: 2px solid #ffffff;
-  backdrop-filter: blur(15px);
-  overflow: hidden;
-  position: fixed;
-}
-
-.logo {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-  list-style: none;
-}
-
-.topnav li {
-  background-color: transparent;
-  display: inline-block;
-  padding: 0px 15px;
-}
-
-.topnav li .a {
-  background-color: transparent;
-  transition: all 0.3s ease 0s;
-}
-
-.topnav li .a:hover {
-  color: #0077ff;
-  font-weight: 500;
-}
-
-.material-icons {
-  background-color: transparent;
-  padding-right: 10px;
-  vertical-align: middle;
-}
-
-.button-no-border {
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+.btn-fill {
   background-color: #0077ff;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 15px;
   color: white;
-  border: 2px solid #0077ff;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
-  transition-duration: 0.4s;
-  cursor: pointer;
+  transition: 0.3s ease;
 }
 
-.button-no-border:hover {
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: #005ac2;
-  color: white;
-  border: 2px solid #005ac2;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.wrapper {
-  max-width: 450px;
-  height: auto;
-  padding: 0px 10px;
+.btn-fill:hover {
+  background-color: #0057bb;
+  transition: 0.3s ease;
 }
 
 /* Section Form Starts Here */
 
 .section-form {
-  display: flex;
-  padding: 150px 0px;
+  padding: 100px 0px;
 }
 
 .button2 {
@@ -167,12 +63,9 @@ header {
   outline: none;
   padding: 10px 20px;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
   background-color: #0077ff;
   color: white;
   border: 2px solid #0077ff;
-  font-size: 18px;
   margin: auto;
   border-radius: 10px;
   transition-duration: 0.4s;
@@ -182,29 +75,18 @@ header {
 }
 
 .button2:hover {
-  outline: none;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   background-color: #005ac2;
   color: white;
   border: 2px solid #005ac2;
-  font-size: 18px;
-  margin: auto;
-  border-radius: 10px;
   transition-duration: 0.4s;
-  cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
 }
 
 .text-row {
   outline: none;
   margin: auto;
-  padding: 10px;
+  padding: 10px 0px;
   max-width: 440px;
   font-size: 18px;
-  font-family: -apple-system, "San Francisco", sans-serif;
   font-weight: 500;
 }
 
@@ -214,7 +96,6 @@ header {
   padding: 10px;
   max-width: 440px;
   font-size: 18px;
-  font-family: -apple-system, "San Francisco", sans-serif;
   font-weight: 500;
   border-radius: 7px;
   border: 2px solid rgb(223, 223, 223);

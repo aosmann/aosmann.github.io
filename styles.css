@@ -1,10 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap");
-@font-face {
-  font-family: "San Francisco";
-  font-weight: 400;
-  src: url("https://applesocial.s3.amazonaws.com/assets/styles/fonts/sanfrancisco/sanfranciscodisplay-regular-webfont.woff");
-}
 
 @keyframes animatedBackground {
   from {
@@ -15,137 +10,59 @@
   }
 }
 
-@media only screen and (max-width: 725px) {
-  .hero-text-group,
-  .about-us-text,
-  .parent-text-group,
-  .teacher-text-group,
-  .student-text-group {
-    padding-right: 10px;
-    padding-left: 10px;
-  }
-  .section-hero,
-  .section-about-us,
-  .section-web,
-  .section-teacher,
-  .section-student,
-  .section-parent {
-    padding: 0px;
-  }
-  .app-icons {
-    margin-top: 40px;
+@media only screen and (max-width: 991px) {
+  .download-button {
+    max-width: 140px;
   }
   .section-reviews {
     display: none;
   }
 }
 
-@media only screen and (max-width: 725px) {
-  .hero-headline,
-  .hero-text,
-  .hero-text-group {
-    text-align: center;
+@media only screen and (max-width: 767px) {
+  body,
+  h1,
+  p {
+    text-align: center !important;
+  }
+
+  img[src="./images/hero.png"] {
+    margin-bottom: 20px;
+  }
+  p {
+    margin: auto;
   }
 }
 
-@media only screen and (max-width: 940px) {
-  .download-button {
-    height: 50px;
-    padding: 5px;
-  }
-  .topnav {
-    display: none;
-  }
+html,
+body {
+  background-color: #202020;
+  padding-top: 40px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
-* {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  margin: auto;
-  padding: 0;
-  background-color: transparent;
+a {
+  text-decoration: none !important;
 }
 
 h1 {
+  height: fit-content;
+  font-weight: 700 !important;
+  font-family: "Ubuntu", sans-serif;
+}
+
+h2 {
+  height: fit-content;
+  font-weight: 500 !important;
   font-family: "Ubuntu", sans-serif;
 }
 
 p {
-  font-family: -apple-system, "San Francisco", sans-serif;
-}
-
-::-webkit-scrollbar {
-  background-color: transparent;
-  width: 12px;
-  height: 12px;
-  border-radius: 50px;
-}
-
-::-webkit-scrollbar-thumb {
-  width: 10px;
-  border-radius: 50px;
-  background-color: rgb(158, 158, 158);
-}
-
-li,
-.a,
-button {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  color: rgb(126, 126, 126);
-  text-decoration: none;
-  outline: none;
-}
-
-body {
-  margin: auto;
-  margin-top: 0;
-  overflow: auto;
-  outline: none;
-  text-decoration: none;
-}
-
-header {
-  z-index: 1;
-  width: 100%;
-  max-height: 85px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #ffffffe1;
-  padding: 20px 0;
-  border-bottom: 2px solid #ffffff;
-  backdrop-filter: blur(15px);
-  overflow: hidden;
-  position: fixed;
-}
-
-.logo {
-  background-color: transparent;
-  cursor: pointer;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: transparent;
-  list-style: none;
-}
-
-.topnav li {
-  background-color: transparent;
-  display: inline-block;
-  padding: 0px 15px;
-}
-
-.topnav li .a {
-  background-color: transparent;
-  transition: all 0.3s ease 0s;
-}
-
-.topnav li .a:hover {
-  color: #0077ff;
-  font-weight: 500;
+  font-size: 22px;
+  height: fit-content;
 }
 
 .material-icons {
@@ -154,341 +71,96 @@ header {
   vertical-align: middle;
 }
 
-.button-no-border {
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: #0077ff;
-  color: white;
-  border: 2px solid #0077ff;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.button-no-border:hover {
-  padding: 16px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: #005ac2;
-  color: white;
-  border: 2px solid #005ac2;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
-  transition-duration: 0.4s;
-  cursor: pointer;
-}
-
-.wrapper {
-  max-width: 1300px;
-  height: auto;
-  padding: 0px 10px;
-}
-
-.app-icons {
-  max-width: 15%;
-  min-width: 80px;
-  border: 1px solid rgb(238, 238, 238);
-  border-radius: 20px;
-  margin-bottom: 20px;
-  filter: drop-shadow(0px 0px 10px #bebebe57);
-}
-
-.material-icons {
-  background-color: transparent;
-  padding-right: 10px;
-  vertical-align: middle;
-}
-
-/* Section Hero Starts Here */
-
-.section-hero {
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
-  display: flex;
-  background-color: #f6f6f6;
-}
-
-.hero-left-panel {
-  text-align: end;
-  min-width: 100px;
-  display: flex;
-}
-
-.hero-right-panel {
-  margin: 0px;
-  display: flex;
-}
-
-.hero-image {
-  width: 100%;
-  max-width: 630px;
-}
-
-.hero-text-group {
-  text-align: left;
-  font-size: 23px;
-}
-
-.hero-headline {
-  text-align: left;
+.nav-item,
+.nav-link {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  max-width: 450px;
-  color: black;
-  margin: 0px;
-  padding-bottom: 10px;
+  font-size: 16px;
+  opacity: 70%;
+  transition: 0.3s ease;
 }
 
-.hero-text {
-  text-align: left;
-  font-weight: 400;
-  max-width: 450px;
-  margin: 0px;
+.nav-link:hover {
+  opacity: 1;
+  transition: 0.3s ease;
+}
+
+.btn-fill {
+  background-color: #0077ff;
+  border-radius: 50px;
+  border: none;
+  padding: 5px 15px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.btn-fill:hover {
+  background-color: #0057bb;
+  transition: 0.3s ease;
+}
+
+.section-hero {
+  padding: 70px 0px;
+  padding-bottom: 120px;
+  background-color: #f6f6f6;
 }
 
 .download-button {
-  max-height: 60px;
+  max-height: 50px;
   margin-right: 10px;
   cursor: pointer;
+  margin: 15px auto;
 }
 
-/* Section About Us Starts Here */
-
-.section-about-us {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
-  display: flex;
+.section-about {
+  padding: 100px 0px;
+  color: white;
   background-color: #0077ff;
 }
 
-.about-us-text {
-  max-width: 900px;
-  font-size: 23px;
-  font-weight: 400;
-  color: white;
-  text-align: center;
-}
-
-/* Section Web Starts Here */
-
-.section-web {
-  text-align: center;
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
+.section-demo {
+  padding: 100px 0px;
   padding-bottom: 0px;
-  display: flex;
   background-color: #f6f6f6;
 }
 
-.section-web-text {
-  max-width: 900px;
-  font-size: 23px;
-  font-weight: 500;
-  color: #212529;
-  text-align: center;
+.section-apps {
+  color: #202020;
+  padding: 100px 0px;
 }
 
-.web-image {
-  display: flex;
-  align-items: center;
+.col-image-app {
+  max-width: 800px !important;
+  padding: 20px;
   margin: auto;
-  padding: 0px;
 }
 
-/* Section Teacher Starts Here */
-
-.section-teacher {
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
-  display: flex;
-  background-color: #ffffff;
+.app-icons {
+  max-width: 80px;
+  border-radius: 15px;
+  filter: drop-shadow(3px 3px 10px #2020201c);
 }
 
-.teacher-left-panel {
-  text-align: end;
-  min-width: 100px;
-  display: flex;
+.app-text {
+  padding-top: 10px;
+  max-width: 550px;
 }
 
-.teacher-right-panel {
-  margin: 0px;
-  display: flex;
+#teacher {
+  background-color: white;
 }
 
-.teacher-image {
-  width: 100%;
-  max-width: 630px;
-}
-
-.teacher-text-group {
-  text-align: left;
-  font-size: 23px;
-}
-
-.teacher-headline {
-  text-align: left;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  max-width: 450px;
-  color: black;
-  margin: 0px;
-  padding-bottom: 10px;
-}
-
-.teacher-text {
-  text-align: left;
-  font-weight: 400;
-  max-width: 500px;
-  margin: 0px;
-}
-
-/* Section Student Starts Here */
-
-.section-student {
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
-  display: flex;
+#student {
   background-color: #f6f6f6;
 }
 
-.student-left-panel {
-  text-align: end;
-  min-width: 100px;
-  display: flex;
-  order: 2;
+#parent {
+  background-color: white;
 }
-
-.student-right-panel {
-  margin: 0px;
-  margin-left: 15px;
-  display: flex;
-  order: 1;
-}
-
-.student-image {
-  width: 100%;
-  max-width: 630px;
-}
-
-.student-text-group {
-  text-align: left;
-  font-size: 23px;
-}
-
-.student-headline {
-  text-align: left;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  max-width: 450px;
-  color: black;
-  margin: 0px;
-  padding-bottom: 10px;
-}
-
-.student-text {
-  text-align: left;
-  font-weight: 400;
-  max-width: 500px;
-  margin: 0px;
-}
-
-/* Section Parent Starts Here */
-
-.section-parent {
-  width: 100%;
-  height: auto;
-  padding: 150px 0px;
-  display: flex;
-  background-color: #ffffff;
-}
-
-.parent-left-panel {
-  text-align: end;
-  min-width: 100px;
-  display: flex;
-}
-
-.parent-right-panel {
-  margin: 0px;
-  display: flex;
-}
-
-.parent-image {
-  width: 100%;
-  max-width: 630px;
-}
-
-.parent-text-group {
-  text-align: left;
-  font-size: 23px;
-}
-
-.parent-headline {
-  text-align: left;
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 700;
-  max-width: 450px;
-  color: black;
-  margin: 0px;
-  padding-bottom: 10px;
-}
-
-.parent-text {
-  text-align: left;
-  font-weight: 400;
-  max-width: 500px;
-  margin: 0px;
-}
-
-/* Section Features Starts Here */
-
-.section-features {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  padding: 150px 0px;
-  display: flex;
-  background-color: #ffffff;
-}
-
-.features-box {
-  height: auto;
-  padding: 40px;
-  margin: 15px;
-  border-radius: 20px;
-  background-color: #ffffff;
-  transition: 0.3s;
-  border: 2px solid #f6f6f6;
-}
-
-.features-box:hover {
-  background-color: #f6f6f6;
-}
-
-.text-features {
-  padding: 0px 20px;
-}
-
-/* Section Reviews Starts Here */
 
 .section-reviews {
-  padding: 100px;
-}
-
-.flickity-enabled.is-draggable .flickity-viewport {
-  height: 400px !important;
+  padding-top: 0px;
+  padding-bottom: 100px;
 }
 
 .carousel {
@@ -510,24 +182,35 @@ header {
   height: 100%;
 }
 
-/* Section Customers Starts Here */
+.flickity-enabled.is-draggable .flickity-viewport {
+  height: 400px !important;
+}
 
 .section-customers {
-  padding-bottom: 100px;
+  padding: 100px 0;
 }
 
 .customers-slide {
-  height: 200px;
+  height: 400px;
   width: 1368px;
   background-color: transparent;
   background-image: url("images/image-loop.png");
   background-repeat: repeat-x;
   animation: animatedBackground 30s linear infinite;
-  line-height: 200px;
+  line-height: 400px;
   transition-duration: 0.4s;
 }
 
-/* Section Info Starts Here */
+.section-info {
+  padding: 50px;
+  background-color: #0077ff;
+}
+
+.info-table {
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
 
 .section-info {
   padding: 50px;
@@ -587,18 +270,10 @@ header {
 }
 
 .button1:hover {
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
   background-color: #0077ff;
-  color: #ffffff;
   border: 2px solid #0077ff;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
   transition-duration: 0.3s;
-  cursor: pointer;
+  color: #ffffff;
 }
 
 .button2 {
@@ -617,21 +292,10 @@ header {
 }
 
 .button2:hover {
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  background-color: #005ac2;
-  color: #ffffff;
-  border: 2px solid #005ac2;
-  font-size: 18px;
-  margin: 4px 2px;
-  border-radius: 80px;
+  background-color: #0057bb;
+  border: 2px solid #0057bb;
   transition-duration: 0.3s;
-  cursor: pointer;
 }
-
-/* Section Footer Starts Here */
 
 .footer {
   background-color: #272727;
@@ -644,6 +308,8 @@ header {
 }
 
 .map {
+  width: 90%;
+  margin: 10px;
   opacity: 50%;
   transition: 0.4s;
   border-radius: 10px;
@@ -651,4 +317,23 @@ header {
 
 .map:hover {
   opacity: 80%;
+}
+
+.input {
+  background-color: #3d3d3d;
+  width: 90%;
+  margin: 10px;
+  padding: 15px 15px;
+  border-radius: 7px;
+  border: none;
+}
+
+.logo-edusoft {
+  filter: grayscale(1);
+  transition: 0.3s ease;
+}
+
+.logo-edusoft:hover {
+  filter: none;
+  transition: 0.3s ease;
 }
