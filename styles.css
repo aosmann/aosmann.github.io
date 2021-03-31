@@ -274,12 +274,8 @@ p {
   filter: drop-shadow(0px 0px 50px #3333331f);
 }
 
-.plan-text {
-  padding: 0px 5px;
-}
-
 .plan-text-list {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .button1 {
