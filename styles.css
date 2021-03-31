@@ -103,6 +103,8 @@ p {
   padding: 70px 0px;
   padding-bottom: 120px;
   background-color: #f6f6f6;
+  background-image: url(./images/bg-tech.jpg);
+  background-size: cover;
 }
 
 .download-button {
