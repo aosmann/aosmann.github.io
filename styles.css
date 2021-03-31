@@ -78,6 +78,7 @@ p {
   font-size: 16px;
   opacity: 70%;
   transition: 0.3s ease;
+  padding-left: 17px !important;
 }
 
 .nav-link:hover {
