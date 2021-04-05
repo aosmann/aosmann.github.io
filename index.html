@@ -18,11 +18,22 @@
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
    <script src="jquery-3.3.1"></script>
+   <script src="loader.js"></script>
    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 
 
 </head>
 <body>
+
+   <div class="loader fixed-top" id="loader">
+      <div class="container loader-container d-flex">
+         <button class="btn btn-primary m-auto" type="button" id="loading-image" disabled>
+            <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+            <span class="sr-only">Loading...</span>
+          </button>
+      </div>
+     </div>
+   
 
   <nav class="navbar navbar-expand-lg navbar-light justify-content-between p-3 bg-white fixed-top">
       <div class="container">

@@ -322,6 +322,21 @@ p {
   transition-duration: 0.3s;
 }
 
+div.loader {
+  right: 0;
+  left: 0;
+  top: 0;
+  background-color: #252525;
+  position: fixed;
+  padding: 10px;
+  z-index: 9999;
+}
+
+.loader-container {
+  height: 100vh;
+  width: 100vh;
+}
+
 .footer {
   background-color: #272727;
   padding: 50px;
