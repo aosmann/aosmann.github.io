@@ -377,3 +377,9 @@ div.loader {
   filter: none;
   transition: 0.3s ease;
 }
+
+.max-w-400 {
+  max-width: 430px !important;
+  margin: auto;
+  margin-top: 30px !important;
+}
