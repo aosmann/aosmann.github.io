@@ -258,11 +258,15 @@ p {
   margin: 20px;
   padding: 40px;
   transition: 0.3s ease;
-  border: 3px solid #ebebeb;
+  border: 3px solid white;
+  filter: drop-shadow(3px 3px 80px #5f61721c);
 }
 
 .plan-box:hover {
+  border: 3px solid #ebebeb;
+  /*
   transform: scale(1.03);
+*/
 }
 
 .plan-text-list {
