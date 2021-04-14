@@ -234,19 +234,9 @@ p {
 }
 
 .section-info {
-  padding: 50px;
-  background-color: #0077ff;
-}
-
-.info-table {
-  width: 100%;
-  text-align: center;
-  color: #ffffff;
-}
-
-.section-info {
-  padding: 50px;
-  background-color: #0077ff;
+  padding: 100px;
+  background-image: url(./images/info-bg.jpg);
+  background-size: cover;
 }
 
 .info-table {
