@@ -333,8 +333,6 @@ div.loader {
 
 .footer {
   background-color: #272727;
-  padding: 50px;
-  display: flex;
 }
 
 .contact {
@@ -377,4 +375,21 @@ div.loader {
   max-width: 430px !important;
   margin: auto;
   margin-top: 30px !important;
+}
+
+.bottom {
+  border-top: 1px solid #525252;
+}
+
+.social-icons {
+  margin-right: 0.5rem;
+  filter: grayscale(100);
+  transition: 0.3s ease;
+  opacity: 60%;
+  max-width: 27px;
+}
+
+.social-icons:hover {
+  filter: none;
+  opacity: 1;
 }
