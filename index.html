@@ -25,7 +25,7 @@
 </head>
 <body>
 
-   <!--<div class="loader fixed-top" id="loader">
+   <div class="loader fixed-top" id="loader">
       <div class="container loader-container d-flex">
          <button class="btn btn-primary m-auto" type="button" id="loading-image" disabled>
             <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
@@ -33,7 +33,7 @@
           </button>
       </div>
      </div>
-   -->
+   
 
   <nav class="navbar navbar-expand-lg navbar-light justify-content-between p-3 bg-white fixed-top">
       <div class="container">
@@ -343,7 +343,7 @@
                <div class="plan-text">
                   <h1>Standard</h1>
                   <p class="plan-text-list" style="margin: 0px">Starting from:</p>
-                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">$3</p>
+                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">€3</p>
                   <p class="plan-text-list">Month/student</p>
                   <br>
                    
@@ -369,7 +369,7 @@
                <div class="plan-text">
                   <h1>Medium</h1>
                   <p class="plan-text-list" style="margin: 0px"+>Starting from:</p>
-                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">$7</p>
+                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">€7</p>
                   <p class="plan-text-list">Month/student</p>
                   <br>
                   <p class="plan-text-list" style="font-weight: 500;"><i class="material-icons">done</i>Standard Package</p>                      
@@ -394,7 +394,7 @@
                <div class="plan-text">
                   <h1>Complete</h1>
                   <p class="plan-text-list" style="margin: 0px">Starting from:</p>
-                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">$9</p>
+                  <p style="font-size: 40px; font-weight: 600; margin: 0px;">€9</p>
                   <p class="plan-text-list">Month/student</p>
                   <br>
                   
@@ -462,9 +462,9 @@
       </div>
       <div class="row">
          <div class="col-md-6">
-            <form action="#" method="POST">
-               <input type="text" placeholder="Name" class="input" style="width: 41%;">
-               <input type="email" placeholder="Email" class="input" style="width: 50%;">
+            <form action="./form.php" method="POST">
+               <input type="text" placeholder="Name" class="input" name="name" style="width: 41%;">
+               <input type="email" placeholder="Email" class="input" name="email" style="width: 50%;">
                <textarea name="description" id="description" rows="11" class="input" placeholder="Your message"></textarea>
                <button type="submit" class="input" style="background-color: #0077ff; color: white; font-weight: 600;">Submit</button>
             </form>
